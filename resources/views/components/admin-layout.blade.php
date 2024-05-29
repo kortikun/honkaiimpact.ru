@@ -14,15 +14,15 @@
 <div class="wrapper min-vh-100">
     <nav id="sidebar">
         <div class="sidebar-header">
-            <img src="public/upload/files/images/logo.png" style="width: 75%">
+            <img src="public/upload/files/images/logo.png" alt="" style="width: 75%">
         </div>
         <ul class="list-unstyled">
             <p>АДМИН-ПАНЕЛЬ</p>
             @auth("web")
-                <li ><a href="{{ route("logout") }}" style="color: #6210b4">Выйти</a></li>
-                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="{{ route("logout") }}">Выйти</a></li>
+                <li><a href="#">Главная</a></li>
                 <li><a href="{{ route("chars") }}">Персонажи</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">Музыка</a></li>
             @endauth
         </ul>
 
